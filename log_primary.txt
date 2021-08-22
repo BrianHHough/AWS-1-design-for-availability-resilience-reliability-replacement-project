@@ -1,0 +1,60 @@
+$ ssh -i "AWSProject1.pem" ec2-user@ec2-54-242-58-190.compute-1.amazonaws.com
+
+The authenticity of host 'ec2-54-242-58-190.compute-1.amazonaws.com (54.242.58.190)' can't be established.
+ECDSA key fingerprint is SHA256:MyNfNP4FLCKL+DweANG8LWcs6JuOwMtSV+KvHrsVD08.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-54-242-58-190.compute-1.amazonaws.com' (ECDSA) to the list of known hosts.
+Last login: Sun Jul  5 19:18:12 2020 from pool-71-184-69-103.bstnma.fios.verizon.net
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+13 package(s) needed for security, out of 22 available
+Run "sudo yum update" to apply all updates.
+
+Complete!
+
+
+
+
+$ sudo yum -y install mysql
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                                                             | 3.7 kB  00:00:00     
+Resolving Dependencies
+--> Running transaction check
+---> Package mariadb.x86_64 1:5.5.64-1.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==============================================================================================================================================
+ Package                        Arch                          Version                                 Repository                         Size
+==============================================================================================================================================
+Installing:
+ mariadb                        x86_64                        1:5.5.64-1.amzn2                        amzn2-core                        9.0 M
+
+Transaction Summary
+==============================================================================================================================================
+Install  1 Package
+
+Total download size: 9.0 M
+Installed size: 49 M
+Downloading packages:
+mariadb-5.5.64-1.amzn2.x86_64.rpm                                                                                      | 9.0 MB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:mariadb-5.5.64-1.amzn2.x86_64                                                                                            1/1 
+  Verifying  : 1:mariadb-5.5.64-1.amzn2.x86_64                                                                                            1/1 
+
+Installed:
+  mariadb.x86_64 1:5.5.64-1.amzn2                                                                                                             
+
+Complete!
+[ec2-user@ip-10-1-10-166 ~]$ 
+
+
+
